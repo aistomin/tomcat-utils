@@ -22,5 +22,5 @@ package com.github.aistomin.tomcat.utils.mock;
  * @version $Id$
  * @since 0.1
  */
-public class MockTomcat {
+public final class MockTomcat {
 }

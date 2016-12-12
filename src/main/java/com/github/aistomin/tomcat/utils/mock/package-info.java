@@ -13,29 +13,12 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.github.aistomin.tomcat.utils.mock;
-
-import org.hamcrest.MatcherAssert;
-import org.hamcrest.core.IsInstanceOf;
-import org.junit.Test;
 
 /**
- * Mock Tomcat instance tests.
+ * Mock implementations' package.
  *
  * @author Andrei Istomin (andrej.istomin.ikeen@gmail.com)
  * @version $Id$
  * @since 0.1
  */
-public final class MockTomcatTest {
-
-    /**
-     * Dummy test.
-     * @throws Exception If exception occurs.
-     */
-    @Test
-    public void testDummy() throws Exception {
-        MatcherAssert.assertThat(
-            new MockTomcat(), new IsInstanceOf(MockTomcat.class)
-        );
-    }
-}
+package com.github.aistomin.tomcat.utils.mock;
