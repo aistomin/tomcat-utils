@@ -30,7 +30,7 @@ public interface Tomcat {
     void create();
 
     /**
-     * Delete Tomacat instance.
+     * Delete Tomcat instance.
      */
     void delete();
 

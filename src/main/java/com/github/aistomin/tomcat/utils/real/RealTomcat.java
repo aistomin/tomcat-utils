@@ -28,7 +28,10 @@ import org.apache.commons.lang3.NotImplementedException;
  */
 public final class RealTomcat implements Tomcat {
 
-    @Override
+    /**
+     * Create Tomcat instance.
+     * @todo: Let's implement this method and solve issue #16.
+     */
     public void create() {
         throw new NotImplementedException(
             String.format(
@@ -38,7 +41,10 @@ public final class RealTomcat implements Tomcat {
         );
     }
 
-    @Override
+    /**
+     * Delete Tomcat instance.
+     * @todo: Let's implement this method and solve issue #17.
+     */
     public void delete() {
         throw new NotImplementedException(
             String.format(
@@ -48,7 +54,10 @@ public final class RealTomcat implements Tomcat {
         );
     }
 
-    @Override
+    /**
+     * Start Tomcat instance.
+     * @todo: Let's implement this method and solve issue #18.
+     */
     public void start() {
         throw new NotImplementedException(
             String.format(
@@ -58,7 +67,10 @@ public final class RealTomcat implements Tomcat {
         );
     }
 
-    @Override
+    /**
+     * Stop Tomcat instance.
+     * @todo: Let's implement this method and solve issue #19.
+     */
     public void stop() {
         throw new NotImplementedException(
             String.format(
@@ -68,7 +80,11 @@ public final class RealTomcat implements Tomcat {
         );
     }
 
-    @Override
+    /**
+     * Tomcat's webapps.
+     * @return Webapps.
+     * @todo: Let's implement this method and solve issue #20.
+     */
     public WebApps webapps() {
         throw new NotImplementedException(
             String.format(

@@ -29,7 +29,11 @@ import org.apache.commons.lang3.NotImplementedException;
  */
 public final class RealWebApps implements WebApps {
 
-    @Override
+    /**
+     * Deploy war files.
+     * @param files War files list.
+     * @todo: Let's implement this method and solve issue #21.
+     */
     public void deploy(final List<File> files) {
         throw new NotImplementedException(
             String.format(
@@ -39,7 +43,11 @@ public final class RealWebApps implements WebApps {
         );
     }
 
-    @Override
+    /**
+     * Un-deploy applications.
+     * @param apps Applications list.
+     * @todo: Let's implement this method and solve issue #22.
+     */
     public void undeploy(final List<String> apps) {
         throw new NotImplementedException(
             String.format(
