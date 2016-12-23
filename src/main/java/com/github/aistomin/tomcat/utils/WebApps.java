@@ -15,38 +15,27 @@
  */
 package com.github.aistomin.tomcat.utils;
 
+import java.io.File;
+import java.util.List;
+
 /**
- * Tomcat instance.
+ * Tomcat's webapps folder.
  *
  * @author Andrei Istomin (andrej.istomin.ikeen@gmail.com)
  * @version $Id$
  * @since 0.1
  */
-public interface Tomcat {
+public interface WebApps {
 
     /**
-     * Create Tomcat instance.
+     * Deploy war files.
+     * @param files War files list.
      */
-    void create();
+    void deploy(List<File> files);
 
     /**
-     * Delete Tomacat instance.
+     * Un-deploy applications.
+     * @param apps Applications list.
      */
-    void delete();
-
-    /**
-     * Start Tomcat instance.
-     */
-    void start();
-
-    /**
-     * Stop Tomcat instance.
-     */
-    void stop();
-
-    /**
-     * Tomcat's webapps.
-     * @return Webapps.
-     */
-    WebApps webapps();
+    void undeploy(List<String> apps);
 }

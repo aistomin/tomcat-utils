@@ -13,40 +13,29 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.github.aistomin.tomcat.utils;
+package com.github.aistomin.tomcat.utils.mock;
+
+import org.hamcrest.MatcherAssert;
+import org.hamcrest.core.IsInstanceOf;
+import org.junit.Test;
 
 /**
- * Tomcat instance.
+ * Mock Tomcat's webapps tests.
  *
  * @author Andrei Istomin (andrej.istomin.ikeen@gmail.com)
  * @version $Id$
  * @since 0.1
  */
-public interface Tomcat {
+public final class MockWebAppsTest {
 
     /**
-     * Create Tomcat instance.
+     * Dummy test.
+     * @throws Exception If exception occurs.
      */
-    void create();
-
-    /**
-     * Delete Tomacat instance.
-     */
-    void delete();
-
-    /**
-     * Start Tomcat instance.
-     */
-    void start();
-
-    /**
-     * Stop Tomcat instance.
-     */
-    void stop();
-
-    /**
-     * Tomcat's webapps.
-     * @return Webapps.
-     */
-    WebApps webapps();
+    @Test
+    public void testDummy() throws Exception {
+        MatcherAssert.assertThat(
+            new MockWebApps(), new IsInstanceOf(MockWebApps.class)
+        );
+    }
 }

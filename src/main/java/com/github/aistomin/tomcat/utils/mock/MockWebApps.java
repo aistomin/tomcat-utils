@@ -15,64 +15,35 @@
  */
 package com.github.aistomin.tomcat.utils.mock;
 
-import com.github.aistomin.tomcat.utils.Tomcat;
 import com.github.aistomin.tomcat.utils.WebApps;
+import java.io.File;
+import java.util.List;
 import org.apache.commons.lang3.NotImplementedException;
 
 /**
- * Mock Tomcat implementation.
+ * Mock Tomcat's webapps implementation.
  *
  * @author Andrei Istomin (andrej.istomin.ikeen@gmail.com)
  * @version $Id$
  * @since 0.1
  */
-public final class MockTomcat implements Tomcat {
+public final class MockWebApps implements WebApps {
 
     @Override
-    public void create() {
+    public void deploy(final List<File> files) {
         throw new NotImplementedException(
             String.format(
-                "%s.create() method is not implemented.",
+                "%s.deploy() method is not implemented.",
                 this.getClass().getCanonicalName()
             )
         );
     }
 
     @Override
-    public void delete() {
+    public void undeploy(final List<String> apps) {
         throw new NotImplementedException(
             String.format(
-                "%s.delete() method is not implemented.",
-                this.getClass().getCanonicalName()
-            )
-        );
-    }
-
-    @Override
-    public void start() {
-        throw new NotImplementedException(
-            String.format(
-                "%s.start() method is not implemented.",
-                this.getClass().getCanonicalName()
-            )
-        );
-    }
-
-    @Override
-    public void stop() {
-        throw new NotImplementedException(
-            String.format(
-                "%s.stop() method is not implemented.",
-                this.getClass().getCanonicalName()
-            )
-        );
-    }
-
-    @Override
-    public WebApps webapps() {
-        throw new NotImplementedException(
-            String.format(
-                "%s.webapps() method is not implemented.",
+                "%s.undeploy() method is not implemented.",
                 this.getClass().getCanonicalName()
             )
         );
