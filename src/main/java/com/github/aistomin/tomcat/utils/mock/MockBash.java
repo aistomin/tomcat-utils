@@ -43,6 +43,22 @@ public final class MockBash implements Bash {
     }
 
     /**
+     * Execute bash command synchronously and return output of the command
+     * execution.
+     * @param cmd Bash command that needs to be executed.
+     * @return Exit code.
+     * @todo: Let's implement this method and solve issue #31.
+     */
+    public String executeSyncAndReturnOutput(final String cmd) {
+        throw new NotImplementedException(
+            String.format(
+                "%s.executeSyncAndReturnOutput() method is not implemented.",
+                this.getClass().getCanonicalName()
+            )
+        );
+    }
+
+    /**
      * Execute bash command asynchronously.
      * @param cmd Bash command that needs to be executed.
      * @return Exit code.

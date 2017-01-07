@@ -32,6 +32,14 @@ public interface Bash {
     int executeSync(String cmd);
 
     /**
+     * Execute bash command synchronously and return output of the command
+     * execution.
+     * @param cmd Bash command that needs to be executed.
+     * @return Exit code.
+     */
+    String executeSyncAndReturnOutput(String cmd);
+
+    /**
      * Execute bash command asynchronously.
      * @param cmd Bash command that needs to be executed.
      * @return Exit code.
